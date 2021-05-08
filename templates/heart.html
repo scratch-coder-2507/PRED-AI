@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Heart Attack Predictor</title>
+    <link rel = "icon" href =  
+"https://cdn1.iconfinder.com/data/icons/date-night-3/64/hand-love-embrace-hug-heart-512.png" 
+        type = "image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">PredAI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/aboutheart">About Heart Attack</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <main role="main" class="text-center">
+        <h1 class="cover-heading">Heart Disease Predictor</h1>
+        <p class="lead">♦Please visit the ABOUT HEART ATTACK page for the attribute information♦</p>
+
+    </main>
+
+    <div class="container">
+        <h2 class="text-center mt-3"></h2>
+
+        <form action="/heart" method="POST">
+            <div class="form-group">
+                <label for="age1">Enter Age</label>
+                <input type="text" class="form-control" id="age1" name="age1" placeholder="Enter Age of the Patient">
+            </div>
+            <div class="form-group">
+                <label for="htn1">Enter Gender</label>
+                <select class="form-control custom-select" name="htn1" id="htn">
+                            <option value = "0">Male</option>
+                            <option value = "1">Female</option>
+                        </select>
+                <div class="form-group">
+                    <label for="sg1">Enter Chest Pain value</label>
+                    <input type="text" class="form-control" id="sg1" name="sg1" placeholder="Enter Chest Pain value ">
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label for="sg2">Enter Resting Blood Pressure Value</label>
+                            <input type="text" class="form-control" id="sg2" name="sg2" placeholder="Enter Resting Blood Pressure Value ">
+                            <div class="form-group">
+                                <label for="al1">Enter serum cholestoral Value</label>
+                                <input type="text" class="form-control" id="al1" name="al1" placeholder="Enter serum cholestoral Value">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="su1">Enter blood sugar Value</label>
+                                <input type="text" class="form-control" id="su1" name="su1" placeholder="Enter blood sugar Value">
+                            </div>
+                            <div class="form-group">
+                                <label for="bgrk1">Enter electrocardiographic results (values 0,1,2)   </label>
+                                <input type="text" class="form-control" id="bgrk1" name="bgrk1" placeholder="Enter electrocardiographic results (values 0,1,2) ">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="bu1">Enter maximum heart rate achieved</label>
+                                <input type="text" class="form-control" id="bu1" name="bu1" placeholder="Enter maximum heart rate achieved">
+                            </div>
+                            <div class="form-group">
+                                <label for="sc1">Enter exercise induced angina</label>
+                                <input type="text" class="form-control" id="sc1" name="sc1" placeholder="Enter exercise induced angina">
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="hemo1">Enter ST depression induced by exercise relative to rest</label>
+                                <input type="text" class="form-control" id="hemo1" name="hemo1" placeholder="Enter ST depression induced by exercise relative to rest">
+                            </div>
+                            <div class="form-group">
+                                <label for="pcv1">Enter the slope of the peak exercise ST segment </label>
+                                <input type="text" class="form-control" id="pcv1" name="pcv1" placeholder="Enter the slope of the peak exercise ST segment ">
+                            </div>
+                            <div class="form-group">
+                                <label for="pcv2">Enter ca value </label>
+                                <input type="text" class="form-control" id="pcv2" name="pcv2" placeholder="Enter ca value ">
+                            </div>
+                            <div class="form-group">
+                                <label for="pcv3">Enter thal value/label>
+                        <input type="text" class="form-control" id="pcv3" name="pcv3" placeholder="Enter thal value">
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">Predict</button>
+        </form>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>
